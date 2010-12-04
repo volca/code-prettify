@@ -15,7 +15,8 @@ wp_enqueue_style('code-prettify');
 wp_enqueue_script('code-prettify');
 
 function cp_filter($content) {
-	return preg_replace("|<pre(.*?)><code>(.*?)</code></pre>|is", "htmlspecialchars('\\2')", $content);
+	return preg_replace("|<pre(.*?)><code>(.*?)</code></pre>|ise", 
+		"'<pre\\1><code>'.htmlspecialchars('\\2').'</code></pre>'", $content);
 }
 
 add_filter('the_content', 'cp_filter', 0);

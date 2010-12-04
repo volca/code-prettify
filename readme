@@ -4,7 +4,7 @@ Donate link: http://www.ooso.net/
 Tags: post, code-highlight, google-code-prettify
 Requires at least: 3.0.0
 Tested up to: 3.0.2
-Stable tag: 0.1
+Stable tag: 0.2
 
 This plugin using google-code-prettify to highlight source code in your posts.  
 
@@ -19,6 +19,9 @@ This plugin using <a href="http://code.google.com/p/google-code-prettify/">googl
 Not yet
 
 == Changelog ==
+= 0.2 =
+1. Change tag to &lt;pre&gt;&lt;code&gt;
+
 = 0.1 =
 First version
 
