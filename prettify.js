@@ -33,14 +33,16 @@ document.getElementsByTagName("code"),document.getElementsByTagName("xmp")],o=[]
 PR_TAG:"tag",PR_TYPE:S}})()
 
 (function() {
-	var el, codes = document.getElementsByTagName('code');
+	var el, codes = document.getElementsByTagName('pre');
 	for(var i = 0, l = codes.length; i < l; i++) {
 		el = codes[i];
-		if(!el.className) {
+		if(el.getElementsByTagName('code').length < 1)
+			continue;
+
+		if(!el.className) 
 			el.className = 'prettyprint';
-		} else {
+		else 
 			el.className+= ' prettyprint';
-		}
 	}
 })();
 
