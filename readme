@@ -9,5 +9,21 @@ Stable tag: 0.1
 This plugin using google-code-prettify to highlight source code in your posts.  
 
 == Description ==
+This plugin using <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> to highlight source code in your posts.  
 
-This plugin using google-code-prettify to highlight source code in your posts.  
+== Installation == 
+1. Install and activate the plugin
+1. Use <pre><code> and </code></pre> tag around the code,and post it
+
+== Frequently Asked Questions ==
+Not yet
+
+== Changelog ==
+= 0.1 =
+First version
+
+== Upgrade Notice ==
+Not yet
+
+== Screenshots ==
+Not yet
