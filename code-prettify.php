@@ -4,7 +4,7 @@ Plugin Name: Code Prettify
 Plugin URI: http://www.ooso.net/code-prettify
 Description: This plugin using <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> to highlight source code in your posts. 
 Author: Volcano
-Version: 0.2
+Version: 0.3
 Author URI: http://www.ooso.net
 */
 
@@ -16,7 +16,7 @@ wp_enqueue_script('code-prettify');
 
 function cp_filter($content) {
 	return preg_replace("|<pre(.*?)><code>(.*?)</code></pre>|ise", 
-		"'<pre$1><code>'.str_replace(array('<', '>'), array('&lt;', '&gt;'), stripslashes('$2')).'</code></pre>'", $content);
+		"'<pre$1><code>'.str_replace(array('<', '>'), array('&lt;', '&gt;'), stripslashes(trim('$2'))).'</code></pre>'", $content);
 }
 
 add_filter('the_content', 'cp_filter', 0);
