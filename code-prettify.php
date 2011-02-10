@@ -20,3 +20,4 @@ function cp_filter($content) {
 }
 
 add_filter('the_content', 'cp_filter', 0);
+add_filter('comment_text', 'cp_filter', 0);
